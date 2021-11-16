@@ -1,6 +1,9 @@
 # vue-todolist-1
 
 > A Vue.js project
+> A simple to do list
+
+
 
 ## Build Setup
 
