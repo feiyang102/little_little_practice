@@ -3,5 +3,5 @@
 
 一个待办事项小工具，上手小练习
 
-![vue-todolist-1效果图](.\static\vue-todolist-1效果图.png)
+![vue-todolist-1效果图](static/vue-todolist-1效果图.png)
 
