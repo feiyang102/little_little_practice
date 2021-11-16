@@ -5,3 +5,8 @@
 
 ![vue-todolist-1效果图](static/vue-todolist-1效果图.png)
 
+## 项目 vue-nav-menu-1
+
+一个简单导航栏小练习
+
+![效果图：vue-nav-menu-1](static/效果图：vue-nav-menu-1.png)
