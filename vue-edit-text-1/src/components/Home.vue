@@ -1,9 +1,9 @@
 <template>
   <div class="content" @click="toggleEditInput">
-    <div class="editinput" v-show="isShow">
-      <input type="text" name="" id="" v-model="val" @click.stop="showEditInput" />
+    <div class="content__editinput" v-show="isShow">
+      <input type="content__text" name="" id="" v-model="val" @click.stop="showEditInput" />
     </div>
-    <div class="edittext" @click.stop="toggleEditInput">{{ val }}</div>
+    <p class="content__edittext" @click.stop="toggleEditInput">{{ val }}</p>
   </div>
 </template>
 
@@ -27,20 +27,54 @@ export default {
 }
 </script>
 
-<style>
-.content {
-  width: 300px;
+<style scope>
+body{
+  font: 15px/1.3 'Open Sans', sans-serif;
 }
-.editinput {
+.content{
+  position: relative;
+}
+.content__editinput {
   width: 250px;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background-color: #5897b2;
+  padding: 10px;
+  border-radius: 3px;
 }
-.edittext {
-  font-size: 36px;
-  color: #9c9891;
-  font-weight: 700;
+.content__editinput>input{
+  text-align: center;
+  width: 240px;
+  border:none;
+  border-radius: 3px;
+  line-height: 34px;
+  box-shadow: 0 2px 6px #bbb inset;
+  font-size: 16px;
+  color: #8d9395;
+  font-weight: bold;
 }
-.edittext::before {
+.content__editinput::after{
+    content: '';
+    position: absolute;
+    border: 6px solid #5190ac;
+    border-color: #5190ac transparent transparent;
+    width: 0;
+    height: 0;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -6px;
+}
+.content__edittext{
+  font-size: 22px;
+  font-weight: bold;
+  color: #6d8088;
+  text-align: center;
+}
+.content__edittext::before {
   content: "✎";
   margin-right: 5px;
 }
+
 </style>
