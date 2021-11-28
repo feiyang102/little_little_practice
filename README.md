@@ -10,3 +10,10 @@
 一个简单导航栏小练习
 
 ![效果图：vue-nav-menu-1](static/效果图：vue-nav-menu-1.png)
+
+## 项目 vue-edit-text-1
+
+编辑文本的小练习
+
+![效果图：vue-edit-text-1](static/效果图：vue-edit-text-1.png)
+
