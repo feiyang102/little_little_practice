@@ -10,7 +10,7 @@
         @click.stop="item.selected=!item.selected"
         >
         {{ item.name }}
-        <span class="content__body-item-spam">${{item.price}}</span>
+        <span class="content__body-item-spam">${{item.price.toFixed(2)}}</span>
         </li>
     </ul>
     <p class="content__total">
@@ -68,9 +68,38 @@ export default {
       }
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+}
 .content{
     background-color: #61a1bc;
     color: #ffffff;
+    width: 520px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 27px;
+}
+.content__title{
+  font-weight: 200;
+  margin-top: 30px;
+}
+.content__body{
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-bottom: 2px solid #b0d0de;
+}
+.content__body-item{
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 20px;
+  text-align: left;
+}
+.content__body-item-spam{
+  float: right;
 }
 .content__body-item-selected{
     background-color: #8ec16d;
@@ -78,4 +107,16 @@ export default {
 .content__body-item-unselected{
     background-color: #e35885;
 }
+.content__total{
+  text-align: left;
+  margin-left: 80px;
+  font-size: 18px;
+  margin-top: 12px;
+}
+.content__total-span{
+  float: right;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
 </style>
