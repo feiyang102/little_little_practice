@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子属性的3个属性练习</title>
+    <style>
+        .div0{
+            display: flex;
+            /* flex-direction: column; */
+            width: 600px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+        .div0>div{
+            width: 200px;
+            /*flex-direction 为row 时，代表 width，为column 时，代表height */
+            background-color: violet;
+        }
+        .div0>div:nth-child(1){
+            /* flex-grow: 1; */
+            background-color: coral;
+            /* flex-shrink: 1; */
+        }
+        .div0>div:nth-child(2){
+            /* flex-grow: 4; */
+            background-color: deeppink;
+            /* flex-shrink: 1; */
+        }
+        .div0>div:nth-child(3){
+            /* flex-grow: 5; */
+            background-color: cornflowerblue;
+            flex-basis: 100px;
+            /* width: 200px; */
+            /* flex-shrink: 3; */
+        }
+    </style>
+</head>
+<body>
+    <div class="div0">
+        <div>66666</div>
+        <div>1234567890-1234567890-=234567890-=234567890-=1234567890-1234567890-=234567890-=234567890-=1234567890-1234567890-=234567890-=234567890-=</div>
+        <div>66666</div>
+    </div>
+</body>
+</html>

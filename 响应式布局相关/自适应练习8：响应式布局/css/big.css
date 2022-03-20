@@ -1,0 +1,35 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#layout{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top{
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    background-color: darkorange;
+}
+
+#main{
+    display: flex;
+    
+}
+
+#main li{
+    list-style: none;
+    width: 50px;
+    line-height: 50px;
+    background-color: yellow;
+} */
+
+body{
+    background-color: coral;
+}

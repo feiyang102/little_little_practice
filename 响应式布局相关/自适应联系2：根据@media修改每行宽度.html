@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自适应方案2</title>
+    <style>
+        .div0 {
+            width: 100%;
+            height: 200px;
+        }
+
+        .div0>div {
+            height: 200px;
+            float: left;
+        }
+
+        .div0>div:nth-child(1) {
+            background-color: bisque;
+        }
+
+        .div0>div:nth-child(2) {
+            background-color: cadetblue;
+        }
+
+        .div0>div:nth-child(3) {
+            background-color: darkorange;
+        }
+        /* 每行1项 */
+        @media screen and (max-device-width: 300px) {
+            .div0 div {
+                width: 100%;
+            }
+        }
+
+        /* 每行2项 */
+        @media screen and (min-device-width: 301px) and (max-device-width: 600px) {
+            .div0 div {
+                width: 50%;
+            }
+        }
+
+        /* 每行3项 */
+        @media screen and (min-device-width: 601px) {
+            .div0 div {
+                width: 33.3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div0">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

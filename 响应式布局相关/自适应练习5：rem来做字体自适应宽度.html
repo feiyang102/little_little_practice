@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem的使用</title>
+    <script>
+        var c= ()=>{
+            let w = document.documentElement.clientWidth;
+            let n = (20*(w/320)>40?40+'px':(20*(w/320)+'px'));
+            document.documentElement.style.fontSize = n;
+        }
+        window.addEventListener('load',c);
+        window.addEventListener('resize',c);
+    </script>
+    <style>
+        html{
+            font-size: 14px;
+        }
+        div{
+            /* font-size: 28px; */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div>哈哈哈</div>
+</body>
+</html>

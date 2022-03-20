@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex页面内结合媒体查询做的自适应</title>
+    <style>
+        .div0{
+            display: flex;
+        }
+        .div0 div:first-child{
+            background-color: yellow;
+            /* 不进行伸缩，固定50px的宽度 */
+            flex: 0 0 50px;
+        }
+        .div0 div:nth-child(2){
+            background-color: red;
+            flex: 1 1 auto;
+            
+        }
+        .div0 div:nth-child(3){
+            background-color: yellow;
+            flex: 0 0 50px;
+        }
+        @media screen and (max-device-width: 600px) {
+            .div0 div:nth-child(2){
+                background-color:lightslategrey;
+            }
+        }
+        @media screen and (min-device-width: 301px) and (max-device-width: 600px) {
+            .div0 div:nth-child(2){
+                background-color: violet;
+            }
+        }
+        @media screen and (min-device-width: 600px) {
+            .div0 div:nth-child(2){
+                background-color:cornflowerblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
