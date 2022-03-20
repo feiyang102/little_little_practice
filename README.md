@@ -3,7 +3,7 @@
 
 一个待办事项小工具，上手小练习
 
-![vue-todolist-1效果图](static/vue-todolist-1效果图.png)
+![vue-todolist-1效果图](static/效果图：vue-todolist-1.png)
 
 ## 项目 vue-nav-menu-1
 
@@ -17,6 +17,8 @@
 
 ![效果图：vue-edit-text-1](static/效果图：vue-edit-text-1.png)
 
-订单页面小练习
-![效果图：vue-order-1](static/效果图：vue-order-1.png)
+## 项目 vue-order-1
 
+订单页面小练习
+
+![效果图：vue-order-1](static/效果图：vue-order-1.png)
